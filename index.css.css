@@ -1,0 +1,321 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headervid{
+    width: 100%;
+    filter: brightness(40%);
+    position: absolute;
+    bottom: -40px;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 50px;
+    color: white;
+}
+#webpageLogo{
+    width: 60px;
+    margin-left: 30px;
+}
+#login{
+    position: absolute;
+    right: 30px;
+}
+h4{
+    cursor: pointer;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+#pageName{
+    position: absolute;
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    animation: slide 2s ease-in;
+}
+@keyframes slide{
+    from{
+        transform: translate(-450px);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0px);
+        filter: opacity(1);
+    }
+}
+#search{
+width: 70%;
+ height: 30px;
+background-color: white;
+position: absolute;
+z-index: 3;
+bottom: 35%;
+border-radius: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 5px black;
+animation: slideDown 2s ease-in;
+}
+#searchID{
+    width: 90%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+}
+i{
+    cursor: pointer;
+}
+@keyframes slideDown {
+    from{
+        transform: translate(0px,50px);
+        filter: opacity(0);
+    }
+    to{
+        transform: translate(0px,0px);
+        filter: opacity(1);
+    }
+}
+.goDown{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 30px;
+    font-size: 50px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+}
+.goDown:hover{
+    animation: giggle 0.2s linear;
+    cursor: pointer;
+} 
+@keyframes giggle {
+    0%,100%{
+        transform: rotate(0deg) skew(0deg);
+    }
+    35%,75%{
+        transform: rotate(-10deg) skewY(0deg) skewX(20deg);
+    }
+    55%,85%{
+        transform: rotate(10deg) skewY(-20deg) skewY(0deg);
+    }
+}
+#latestshoesec{
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+    background-color: rgb(237, 75, 153);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.shoerot{
+    width: 250px;
+    height: 250px;
+    background-color: palevioletred;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+#lsshoe{
+    width: 170px;
+    filter: drop-shadow(5px 5px 5px black);
+    transition: all 0.3s;
+
+}
+.shoerot:hover #lsshoe{
+    transform: rotate(-40deg) translateX(-35px) translateY(-80px);
+}
+.shoerot:hover{
+    transform: scale(1.2);
+}
+.lsname{
+    position: absolute;
+    top: 5px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+    display: none;
+    text-transform: capitalize;
+}
+.lspara{
+    position: absolute;
+    top: 80px;
+    width: 120px;
+    right: 10px;
+    font-size: 20px;
+    display: none;
+    color: white;
+}
+.money{
+    position: absolute;
+    bottom: 60px;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: none;
+
+}
+.shoerot:hover .lsname, .shoerot:hover .lspara, .shoerot:hover .money, .shoerot:hover #buy
+{
+    display: block;
+}
+#buy{
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+    background-color: orange;
+    display: none;
+    font-size: 25px;
+}
+#latestsecheading, #CategorySection{
+    position: absolute;
+    top: 90px;
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 15px;
+    word-spacing: 30px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+.goDown{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    font-size: 50px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+}
+.goDown:hover{
+    animation: giggle 0.2s linear;
+    cursor: pointer;
+} 
+@keyframes giggle {
+    0%,100%{
+        transform: rotate(0deg) skew(0deg);
+    }
+    35%,75%{
+        transform: rotate(-10deg) skewY(0deg) skewX(20deg);
+    }
+    55%,85%{
+        transform: rotate(10deg) skewY(-20deg) skewY(0deg);
+    }
+}
+#CategorySec{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top:200vh;
+    background-color: rgb(207, 121, 164);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: space-evenly;
+    column-gap: 100px;
+}
+.cataSec{
+    width: 170px;
+    height: 170px;
+    background-color: rgba(128, 128, 128,  0.506);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s;
+    color: white;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    cursor: pointer;
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.cataSec:hover{
+    transform: scale(1.2);
+}
+#Lifestyle{
+background-image: url(./assest/images/lifestyle1.jpg);
+}
+#jorden{
+    background-image: url(./assest/images/jordon.jpg);
+    }
+    #Running{
+        background-image: url(./assest/images/running.jpg);
+        }
+        #basketball{
+            background-image: url(./assest/images/basketball.jpg);
+        }
+        #football{
+            background-image: url(./assest/images/football.jpg);
+        }
+        #trininggym{
+            background-image: url(./assest/images/gym.jpg);
+        }
+        #skateboarding{
+            background-image: url(./assest/images/sketeboarding.jpg);
+        }
+        #golf{
+            background-image: url(./assest/images/golf.jpg);
+        }
+        #tennis{
+            background-image: url(./assest/images/tennis.jpg);
+        }
+        #walking{
+            background-image: url(./assest/images/walking.jpg);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #CategorySection{
+            top:20px;
+        }
+        #Up{
+            position: absolute;
+            left: 45%;
+            bottom: -20px;
+            font-size: 30px;
+            transform: rotate(180deg);
+        }
